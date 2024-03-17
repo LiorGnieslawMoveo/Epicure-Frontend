@@ -80,7 +80,7 @@
                     }
                 }
             }
-            .navbar{
+            .navbar-titles {
                 display: none;
                 @include desktop {
                     display: flex;
@@ -108,7 +108,7 @@
                 }
             }
         }
-        .nav {
+        .navbar-icons {
             @include desktop{
                 width: 767px;
                 height: 36px;
