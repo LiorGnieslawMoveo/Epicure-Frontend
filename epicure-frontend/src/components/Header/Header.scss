@@ -1,0 +1,63 @@
+@import '../../styles/mixins.scss';
+
+.header{
+    @include font-style;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    @include desktop{
+        margin-left: 127px;;
+    }
+
+    .hamburger-menu{
+        cursor: pointer;
+        @include desktop{
+            display: none;
+        }
+    }
+
+    .container{
+        display: flex;
+        
+        .epicure-logo {
+            display: flex;
+            width: 40px;
+        }
+    
+        .epicure-title {
+            display: none;
+            @include desktop {
+                display: flex;
+                color: hsl(0, 0%, 2%); 
+                text-decoration: none; 
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .navbar-titles {
+        display: none;
+        @include desktop{
+            @include font-style;
+            position: static;
+            font-size: 18px;
+            display: flex; 
+            align-items: center;
+            padding: 10px 0; 
+            margin-right: 420px;
+            gap: 32px;
+        }
+    }
+
+    .navbar-icons {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        img {
+            margin-right: 10px; 
+            cursor: pointer;
+        }
+    }
+}
