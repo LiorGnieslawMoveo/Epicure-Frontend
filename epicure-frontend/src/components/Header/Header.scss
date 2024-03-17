@@ -20,19 +20,24 @@
 
     .container{
         display: flex;
+        align-items: center;
+        justify-content: center;
         
         .epicure-logo {
-            display: flex;
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
             width: 40px;
+            @include desktop{
+                left:unset;
+            }
         }
     
         .epicure-title {
             display: none;
             @include desktop {
                 display: flex;
-                color: hsl(0, 0%, 2%); 
-                text-decoration: none; 
-                margin-left: 20px;
+                margin-left: 127px;
             }
         }
     }
@@ -41,12 +46,11 @@
         display: none;
         @include desktop{
             @include font-style;
-            position: static;
-            font-size: 18px;
             display: flex; 
             align-items: center;
-            padding: 10px 0; 
-            margin-right: 420px;
+            position: static;
+            font-size: 18px;
+            margin-right: 600px;
             gap: 32px;
         }
     }
@@ -54,10 +58,22 @@
     .navbar-icons {
         display: flex;
         align-items: center;
-        gap: 24px;
+        position: absolute;
+        right: 7px;
+        gap: 20px;
+        @include desktop{
+            gap: 24px;
+            right: 80px;
+        }
         img {
-            margin-right: 10px; 
+            height: 20px;
+            width: 20px;
             cursor: pointer;
+            @include desktop{
+                height: 24px;
+                width: 24px;
+                
+            }
         }
     }
 }
