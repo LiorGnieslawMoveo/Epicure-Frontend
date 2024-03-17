@@ -3,3 +3,12 @@
       @content;
     }
   }
+
+  @mixin font-style {
+    font-family: "Helvetica Neue";
+    color: black;
+    line-height: 21.76px;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0px;
+  }
