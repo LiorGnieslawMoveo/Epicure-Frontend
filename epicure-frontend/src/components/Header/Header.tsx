@@ -10,23 +10,28 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <img className="hamburger-menu" src={hamburger} alt="Epicure Logo" />
+        <div className='header-container'>
+          <div className='left-container'>
+            <div className='hamburger-container'>
+              <img className="hamburger-menu" src={hamburger} alt="Epicure Logo" />
+            </div>
 
-        <div className="container">
-            <img className="epicure-logo" src={epicureLogo} alt="epicure"></img>
-            <img className="epicure-title" src={epicureTitle} alt="logo"></img>
-        </div>
+            <div className="logo-container">
+                <img className="epicure-logo" src={epicureLogo} alt="epicure"></img>
+                <img className="epicure-title" src={epicureTitle} alt="logo"></img>
+            </div>
 
-        <div className="navbar-titles">
-          <p>Restaurants</p>
-          <p>Chefs</p>
+            <div className="navbar-titles">
+              <div>Restaurants</div>
+              <div>Chefs</div>
+            </div>
+          </div>
+          <nav className="navbar-icons">
+              <img src={magnifyingGlass} alt="Magnifying Glass"/>
+              <img src={userIcon} alt="User Icon"/>
+              <img src={bagIcon} alt="Bag Icon"/>
+          </nav>
         </div>
-        
-        <nav className="navbar-icons">
-            <img src={magnifyingGlass} alt="Magnifying Glass"/>
-            <img src={userIcon} alt="User Icon"/>
-            <img src={bagIcon} alt="Bag Icon"/>
-        </nav>
       </header>
     </>
   );
