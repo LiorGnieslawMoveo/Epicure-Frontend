@@ -1,10 +1,10 @@
 import './Header.scss';
-import epicureLogo from '../../assests/images/epicure-logo.svg';
-import epicureTitle from '../../assests/images/epicure-title.svg';
-import hamburger from '../../assests/images/hamburger.svg';
-import bagIcon from '../../assests/images/bag-icon.svg';
-import magnifyingGlass from '../../assests/images/magnifying-glass.svg';
-import userIcon from '../../assests/images/user-icon.svg';
+import epicureLogo from '../../assets/images/epicure-logo.svg';
+import epicureTitle from '../../assets/images/epicure-title.svg';
+import hamburger from '../../assets/images/hamburger.svg';
+import bagIcon from '../../assets/images/bag-icon.svg';
+import magnifyingGlass from '../../assets/images/magnifying-glass.svg';
+import userIcon from '../../assets/images/user-icon.svg';
 
 const Header = () => {
   return (
