@@ -5,9 +5,9 @@ const Footer = () => {
     <>
       <footer className='footer'>
         <div className='footer-links'>
-          <p>Contact Us</p>
-          <p>Term of Use</p>
-          <p>Privacy Policy</p>
+          <div>Contact Us</div>
+          <div>Term of Use</div>
+          <div>Privacy Policy</div>
         </div>
       </footer>
     </>

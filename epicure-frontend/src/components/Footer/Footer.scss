@@ -1,15 +1,16 @@
 @import "../../styles/mixins.scss";
 
 .footer {
-  height: 202px;
-  justify-content: center;
-  align-items: left;
+  display: flex;
+  justify-content: flex-start;
   margin-left: 19px;
+  @include desktop {
+    justify-content: center;
+  }
   
   .footer-links {
     display: flex;
     flex-direction: column;
-    height: 146px;
     gap: 40px;
     @include font-style;
     font-size: 18px;
