@@ -11,7 +11,7 @@ const IconsMeaning = () => {
                     {IconsMeaningInfo.map((icon, index) => (
                         <div className='icon-item' key={index}>
                             <img src={icon.image} alt={icon.name} />
-                            <p>{icon.name}</p>
+                            <h3>{icon.name}</h3>
                         </div>
                     ))}
                 </div>
