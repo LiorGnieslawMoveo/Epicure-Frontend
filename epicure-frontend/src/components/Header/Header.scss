@@ -1,0 +1,94 @@
+@import '../../styles/mixins.scss';
+
+.header {
+    margin: 11px;
+
+    .header-container {
+        @include font-style;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .hamburger-container {
+                display: flex;
+                cursor: pointer;
+
+                @include desktop {
+                    display: none;
+                }
+            }
+
+            .logo-container {
+                display: flex;
+                align-items: center;
+                
+                @include desktop {
+                    margin-left: 127px;
+                    justify-content: flex-start;
+                }
+
+                .epicure-logo {
+                    width: 40px;
+
+                    @include desktop {
+                        align-items: center;
+                    }
+                }
+
+                .epicure-title {
+                    display: none;
+
+                    @include desktop {
+                        display: flex;
+                        align-items: center;
+                        margin-left: 20px;
+                    }
+                }
+
+            }
+
+            .navbar-titles {
+                display: none;
+
+                @include desktop {
+                    @include font-style;
+                    align-items: center;  
+                    display: flex;
+                    font-size: 18px;
+                    gap: 32px;
+                }
+            }
+
+        }
+
+        .navbar-icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            justify-content: flex-end;
+
+            @include desktop {
+                gap: 24px;
+                margin-right: 127px;
+            }
+
+            img {
+                height: 20px;
+                width: 20px;
+                cursor: pointer;
+
+                @include desktop {
+                    height: 24px;
+                    width: 24px;
+
+                }
+            }
+        }
+    }
+}
