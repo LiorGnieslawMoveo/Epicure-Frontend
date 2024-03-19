@@ -36,14 +36,13 @@
 
             @include desktop {
                 width: 404px;
-                padding: 36px 126px, 36px, 126px;
             }
             
             .hero-text {
                 @include font-style;
                 font-size: 23.8px;
                 line-height: 32px;
-                letter-spacing: 1.9700000286102295px;
+                letter-spacing: 1.97px;
                 text-align: center;
 
                 @include desktop {
@@ -72,7 +71,7 @@
                     @include font-style;
                     font-size: 12px;
                     line-height: 15px;
-                    letter-spacing: 1.2899999618530273px;
+                    letter-spacing: 1.28px;
                     border: none;
                     background-color: transparent;
                     flex: 1 0 0;
