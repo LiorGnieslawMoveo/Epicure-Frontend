@@ -1,4 +1,4 @@
-import './Header.scss'; 
+import './Header.scss';
 import epicureLogo from '../../assests/images/epicure-logo.svg';
 import epicureTitle from '../../assests/images/epicure-title.svg';
 import hamburger from '../../assests/images/hamburger.svg';
@@ -15,21 +15,22 @@ const Header = () => {
             <div className='hamburger-container'>
               <img className="hamburger-menu" src={hamburger} alt="Epicure Logo" />
             </div>
-
             <div className="logo-container">
-                <img className="epicure-logo" src={epicureLogo} alt="epicure"></img>
-                <img className="epicure-title" src={epicureTitle} alt="logo"></img>
+              <img className="epicure-logo" src={epicureLogo} alt="epicure"></img>
+              <img className="epicure-title" src={epicureTitle} alt="logo"></img>
             </div>
-
             <div className="navbar-titles">
               <div>Restaurants</div>
               <div>Chefs</div>
             </div>
           </div>
+
+
+
           <nav className="navbar-icons">
-              <img src={magnifyingGlass} alt="Magnifying Glass"/>
-              <img src={userIcon} alt="User Icon"/>
-              <img src={bagIcon} alt="Bag Icon"/>
+            <img src={magnifyingGlass} alt="Magnifying Glass" />
+            <img src={userIcon} alt="User Icon" />
+            <img src={bagIcon} alt="Bag Icon" />
           </nav>
         </div>
       </header>
