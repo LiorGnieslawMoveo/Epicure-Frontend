@@ -1,9 +1,8 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar"
+import 'swiper/scss';
+import 'swiper/scss/navigation';
+import 'swiper/scss/pagination';
+
 import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 import './CardSwipper.scss'
@@ -22,6 +21,7 @@ const CardSwipper: React.FC<{ title: string, cards: cardProps[] }> = ({ title, c
                     spaceBetween={24}
                     slidesPerView={1.4}
                     // navigation
+                    scrollbar={{ draggable: true }}
                     pagination
                     loop={true}
                     coverflowEffect={{
