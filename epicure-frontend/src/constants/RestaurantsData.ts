@@ -27,6 +27,7 @@ const RestaurantsData = {
         }, {
             title: "Onza",
             image: Onza,
+            subtitle: 'Guy Rozmarin',
             rating: ThreeStars,
             className: "restaurant-card"
         }, {

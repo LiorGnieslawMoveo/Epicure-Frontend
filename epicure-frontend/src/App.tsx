@@ -16,6 +16,7 @@ function App() {
       <div className="App">
         <Header />
         <Hero />
+        <CardSwipper title={RestaurantsData.title} cards={RestaurantsData.cards} />
         <CardSwipper title={DishesData.title} cards={DishesData.cards} />
         <IconsMeaning />
         <AboutUs />

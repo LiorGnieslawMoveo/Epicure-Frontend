@@ -11,7 +11,7 @@ import Card from '../Card/Card';
 import { cardProps } from '../../models/types';
 import AllRestaurants from './../../assets/images/all-restaurants.svg'
 
-const CardSwipper: React.FC<{ title: string, cards: cardProps[] }> = ({ title, cards }) => {
+const CardSwipper: React.FC<{ title?: string, cards: cardProps[] }> = ({ title, cards }) => {
     return (
         <>
             <div className="swiper-container">
