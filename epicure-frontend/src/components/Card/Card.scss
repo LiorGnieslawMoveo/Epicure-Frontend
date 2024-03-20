@@ -2,7 +2,7 @@
 
 .card {
     width: 245px;
-    background: #F9F4EA;
+    background: var(--card-backgroundcolor);
 
     @include desktop {
         width: 379px;
@@ -48,13 +48,13 @@
 
             .card-title {
                 margin: unset;
-                padding-top: 16px;
-                padding-bottom: 8px;
-                font-family: Helvetica Neue;
+                font-family: var(--main-font);
                 font-weight: 400;
                 letter-spacing: 2.67px;
-                font-size: 18px;
                 line-height: 21px;
+                font-size: 18px;
+                padding-top: 16px;
+                padding-bottom: 8px;
                 text-align: left;
 
                 @include desktop {
@@ -67,9 +67,8 @@
 
             .card-subtitle {
                 margin: unset;
-                font-family: Helvetica Neue;
+                @include font-style;
                 font-size: 16px;
-                font-weight: 200;
                 letter-spacing: 1.97px;
                 line-height: 20px;
                 text-align: left;
@@ -93,21 +92,19 @@
             }
 
             .card-description {
-                font-family: Helvetica Neue;
+                @include font-style;
                 font-size: 16px;
-                font-weight: 200;
                 line-height: 20px;
                 letter-spacing: 1.97px;
                 text-align: left;
 
                 @include desktop {
-                    line-height: 30px;
+                    margin-top: unset;
                     font-size: 23.8px;
-                    text-align: center;
-                    font-family: Helvetica Neue;
+                    line-height: 30px;
                     padding-left: 42.5px;
                     padding-right: 42.5px;
-                    margin-top: unset;
+                    text-align: center;
                 }
             }
 
@@ -132,8 +129,10 @@
 
         .card-rating {
             display: none;
+
             @include desktop {
                 display: flex;
+
                 .icon-rating {
                     padding-top: 8px;
                 }
@@ -150,7 +149,7 @@
                 .price-line {
                     width: 112px;
                     height: 0.5px;
-                    background: #979797;
+                    background: var(--line-backgroundcolor);
                     align-self: center;
                     margin: 6px;
                 }
@@ -168,12 +167,12 @@
             }
 
             .price-value {
-                margin-left: 4px;
-                font-family: Helvetica Neue;
-                font-size: 16px;
+                font-family: var(--main-font);
                 font-weight: 400;
-                line-height: 19px;
                 letter-spacing: 1.97px;
+                font-size: 16px;
+                margin-left: 4px;
+                line-height: 19px;
                 text-align: center;
 
                 @include desktop {

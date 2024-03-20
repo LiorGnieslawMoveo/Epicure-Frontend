@@ -5,12 +5,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #FAFAFA;
+    background: var(--background-color);
 
     .icons-title {
-        font-family: Helvetica Neue;
+        @include font-style;
         font-size: 18px;
-        font-weight: 200;
         line-height: 35px;
         letter-spacing: 1.25px;
         text-align: left;
@@ -21,7 +20,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 39px 476px 39px 476px;
         gap: 32px;
 
         @include desktop {
@@ -40,16 +38,14 @@
                 @include desktop {
                     width: 77.42px;
                     height: 60px;
-                    padding: 0 0.47107696533203125px 2.5554962158203125px 0;
                 }
             }
 
             h3 {
-                font-family: Helvetica Neue;
+                @include font-style;
                 font-size: 18px;
-                font-weight: 200;
                 line-height: 30px;
-                letter-spacing: 1.9700000286102295px;
+                letter-spacing: 1.97px;
                 text-align: center;
 
                 @include desktop {

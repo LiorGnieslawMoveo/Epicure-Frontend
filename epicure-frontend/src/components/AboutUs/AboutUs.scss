@@ -75,9 +75,8 @@
     }
 
     .about-us-title {
-      font-family: var(--main-font);
+      @include font-style;
       font-size: 18px;
-      font-weight: 200;
       line-height: 35px;
       letter-spacing: 1.25px;
       margin-left: 1px;
@@ -90,10 +89,9 @@
     }
 
     div {
+      @include font-style;
       display: flex;
-      font-family: var(--main-font);
       font-size: 18px;
-      font-weight: 200;
       line-height: 28px;
       letter-spacing: 2.14px;
 

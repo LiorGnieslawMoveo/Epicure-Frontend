@@ -15,7 +15,7 @@
 
     .hero-overlay {
         display: flex;
-        background: #FFFFFFE0;
+        background: var(--overlay-backgroundcolor);
         width: 335px;
         height: 144px;
 
@@ -37,7 +37,7 @@
             @include desktop {
                 width: 404px;
             }
-            
+
             .hero-text {
                 @include font-style;
                 font-size: 23.8px;
@@ -57,7 +57,7 @@
                 width: 290px;
                 height: 30px;
                 border-radius: 4px;
-                border: 0.5px solid #000000;
+                border: var(--border-style);
                 padding: 6px 12px;
                 gap: 8px;
 
@@ -73,7 +73,7 @@
                     line-height: 15px;
                     letter-spacing: 1.28px;
                     border: none;
-                    background-color: transparent;
+                    background-color: var(--transparent-color);
                     flex: 1 0 0;
 
                     &:focus {
@@ -89,12 +89,14 @@
 
                 button {
                     border: none;
-                    background-color: transparent;
+                    background-color: var(--transparent-color);
                     padding: 0;
                     cursor: pointer;
+
                     img {
                         width: 20px;
                         height: 20px;
+
                         @include desktop {
                             width: 32px;
                             height: 32px;
