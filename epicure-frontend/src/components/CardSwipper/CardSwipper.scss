@@ -1,0 +1,25 @@
+@import "../../styles.scss";
+
+.swiper-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 19px;
+    width: 100%;
+
+    .swipper-title {
+        align-items: center;
+        width: 100%;
+        @include font-style;
+        font-size: 18px;
+        line-height: 35px;
+        letter-spacing: 1.25px;
+        text-align: left;
+    }
+
+    .swiper {
+        .swiper-slide {
+            max-width: fit-content;
+        }
+    }
+}
