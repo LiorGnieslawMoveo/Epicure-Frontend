@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import './Header.scss';
-=======
-import './Header.scss'; 
->>>>>>> 6054357 (about us component + fixes)
 import epicureLogo from '../../assets/images/epicure-logo.svg';
 import epicureTitle from '../../assets/images/epicure-title.svg';
 import hamburger from '../../assets/images/hamburger.svg';
