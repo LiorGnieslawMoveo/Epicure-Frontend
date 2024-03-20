@@ -5,10 +5,11 @@ import Hamburger from './../assets/images/hamburger-dish.svg'
 import Spicy from './../assets/images/spicy-icon.svg'
 import Vegan from './../assets/images/vegan-icon.svg'
 import Vegi from './../assets/images/vegi-icon.svg'
+import { cardProps } from '../models/types';
 
 
 
-const DishesData = {
+const DishesData: { title: string, cards: cardProps[] } = {
     title: "SIGNATURE DISH OF:",
     cards: [
         {
