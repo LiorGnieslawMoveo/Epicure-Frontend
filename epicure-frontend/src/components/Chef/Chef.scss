@@ -1,0 +1,161 @@
+@import '../../styles.scss';
+
+.chef-container {
+    margin-left: 19px;
+
+    .title {
+        @include font-style;
+        font-size: 18px;
+        line-height: 35px;
+        letter-spacing: 1.25px;
+        text-align: left;
+
+        @include desktop {
+            font-size: 30px;
+            text-align: center;
+
+        }
+    }
+
+    .image-description-container {
+        display: flex;
+        flex-direction: column;
+
+        @include desktop {
+            flex-direction: row;
+            margin-left: 20px;
+            margin-right: 129px;
+            margin-top: 80px;
+            margin-bottom: 45px;
+            gap: 63.5px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: end;
+            width: 335px;
+            height: 262px;
+            background-size: contain;
+            overflow: hidden;
+
+            @include desktop {
+                flex-direction: row;
+                min-width: 478px;
+                min-height: 372px;
+            }
+
+            .chef-name {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                margin: 0;
+                @include font-style;
+                background: #FFFFFFCC;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 47px;
+                letter-spacing: 2.67px;
+            }
+        }
+
+        .chef-description {
+            @include font-style;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 1.25px;
+            text-align: justify;
+            margin-right: 19px;
+
+            @include desktop {
+                font-size: 24px;
+                line-height: 35px;
+                text-align: justified;
+
+            }
+        }
+    }
+
+    .chef-restaurants-container {
+        @include desktop {
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 80px;
+        }
+
+        .restaurants-list-title {
+            @include font-style;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: left;
+
+            @include desktop {
+                font-size: 30px;
+                line-height: 35px;
+            }
+
+        }
+
+        .swiper {
+            .swiper-slide {
+                @include desktop {
+                    max-width: fit-content;
+                }
+            }
+
+            @include desktop {
+
+                .swiper-button-prev,
+                .swiper-button-next {
+                    display: none;
+                }
+
+                .swiper-pagination {
+                    display: none;
+                }
+            }
+        }
+
+
+        .chefs-restaurants {
+            @include desktop {
+                width: 200px;
+            }
+        }
+    }
+
+    .all-restaurants {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 12px;
+        margin-top: 18.2px;
+        margin-bottom: 48px;
+
+        @include desktop {
+            display: none;
+        }
+
+        .all-restaurants-title {
+            @include font-style;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 35px;
+            letter-spacing: 2px;
+            text-align: right;
+        }
+
+        .all-resaurants-icon {
+            cursor: pointer;
+            width: 24px;
+            height: 18px;
+        }
+    }
+
+
+
+}
