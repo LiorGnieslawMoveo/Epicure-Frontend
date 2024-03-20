@@ -1,0 +1,64 @@
+@import '../../styles/mixins.scss';
+
+.icons-meaning-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #FAFAFA;
+
+    .icons-title {
+        font-family: Helvetica Neue;
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 35px;
+        letter-spacing: 1.25px;
+        @include desktop {
+            font-size: 30px;
+            letter-spacing: 2.14px;
+        }
+    }
+
+    .icons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+
+        @include desktop {
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        .icon-item {
+            @include desktop {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            img {
+                @include desktop {
+                    width: 77.42px;
+                    height: 60px;
+                    padding: 0 0.47px 2.55px 0;
+                }
+            }
+
+            h3 {
+                font-family: Helvetica Neue;
+                font-size: 18px;
+                font-weight: 200;
+                line-height: 30px;
+                letter-spacing: 1.97px;
+                text-align: center;
+
+                @include desktop {
+                    padding: 0;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
