@@ -14,6 +14,14 @@ const SwipperConfig = (spaceBetween: number) => ({
         modifier: 1,
         slideShadows: true,
     },
+    breakpoints: {
+        900: {
+            autoplay: false,
+            spaceBetween: spaceBetween - 8,
+            slidesPerView: 3,
+            touchRatio: 1
+        },
+    },
     watchOverflow: true
 });
 
