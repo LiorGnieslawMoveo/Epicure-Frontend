@@ -4,7 +4,7 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
 .chef-container {
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 48px;
 
     @include desktop {
         margin-top: 80px;
@@ -115,7 +115,6 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
             }
         }
 
-
         .chefs-restaurants {
             @include desktop {}
         }
@@ -127,7 +126,6 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
         flex-direction: row;
         gap: 12px;
         margin-top: 18px;
-        margin-bottom: 48px;
 
         @include desktop {
             display: none;
