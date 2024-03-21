@@ -3,12 +3,13 @@
 .dish-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin: 46px 0;
+    // width: 100%;
+    padding-bottom: 46px;
+    padding-left: 20px;
 
     .title {
         align-items: center;
-        width: 100%;
+        width: 90%;
         @include font-style;
         font-size: 18px;
         line-height: 35px;
@@ -16,6 +17,7 @@
         text-align: left;
 
         @include desktop {
+            width: 100%;
             font-size: 30px;
             line-height: 35px;
             letter-spacing: 1.25px;
