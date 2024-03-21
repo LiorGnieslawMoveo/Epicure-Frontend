@@ -8,3 +8,8 @@ export type cardProps = {
     rating?: string;
     className?: string;
 };
+
+export type cardTypeProps = {
+    title: string;
+    cards: cardProps[];
+}

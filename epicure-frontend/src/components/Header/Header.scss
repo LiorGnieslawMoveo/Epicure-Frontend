@@ -1,4 +1,4 @@
-@import '../../styles/mixins.scss';
+@import "../../styles.scss";
 
 .header {
     margin: 11px;
@@ -14,6 +14,11 @@
             justify-content: space-between;
             width: 100%;
 
+            @include desktop {
+                justify-content: unset;
+                gap: 32px;
+            }
+
             .hamburger-container {
                 display: flex;
                 cursor: pointer;
@@ -26,7 +31,7 @@
             .logo-container {
                 display: flex;
                 align-items: center;
-                
+
                 @include desktop {
                     margin-left: 127px;
                     justify-content: flex-start;
@@ -56,11 +61,11 @@
                 display: none;
 
                 @include desktop {
-                    @include font-style;
-                    align-items: center;  
                     display: flex;
+                    @include font-style;
                     font-size: 18px;
                     gap: 32px;
+                    align-items: center;
                 }
             }
 

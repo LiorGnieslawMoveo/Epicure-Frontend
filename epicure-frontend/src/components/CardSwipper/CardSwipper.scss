@@ -1,0 +1,91 @@
+@import "../../styles.scss";
+
+.dish-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px 46px;
+
+    @include desktop {
+        margin: 0 20px 80px 20px;
+
+    }
+
+    .title {
+        align-items: center;
+        width: 100%;
+        @include font-style;
+        font-size: 18px;
+        line-height: 35px;
+        letter-spacing: 1.25px;
+        text-align: left;
+
+        @include desktop {
+            font-size: 30px;
+            line-height: 35px;
+            letter-spacing: 1.25px;
+            text-align: center;
+
+        }
+    }
+
+    .card-dish-container {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+        @include desktop {}
+
+        .swiper {
+            max-width: 1185px;
+
+            .swiper-slide {
+                .dish-card {
+                    .description-meaning-container {
+                        height: 171px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .no-restaurants {
+        display: none;
+    }
+
+    .all-restaurants {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 12px;
+        margin-top: 16px;
+
+        @include desktop {
+            margin-top: 40px;
+            justify-content: flex-end;
+            padding-right: 50px;
+        }
+
+        .all-restaurants-title {
+            display: flex;
+            @include font-style;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 35px;
+            letter-spacing: 2px;
+
+            @include desktop {
+                font-size: 24px;
+            }
+        }
+
+        .all-resaurants-icon {
+            display: flex;
+            cursor: pointer;
+            width: 24px;
+            height: 18px;
+        }
+    }
+}

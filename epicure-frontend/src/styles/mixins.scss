@@ -1,16 +1,13 @@
 @import "./variables.scss";
 
 @mixin desktop {
-    @media screen and (min-width: 901px) {
-      @content;
-    }
+  @media screen and (min-width: 901px) {
+    @content;
   }
+}
 
-  @mixin font-style {
-    font-family: "Helvetica Neue";
-    color: black;
-    line-height: 21.76px;
-    font-weight: 200;
-    font-style: normal;
-    margin: 0px;
-  }
+@mixin font-style {
+  font-family: var(--main-font);
+  color: var(--black-color);
+  font-weight: var(--font-weight);
+}
