@@ -2,14 +2,15 @@ import PadKiMao from './../assets/images/padkimao.svg'
 import TaMaLaKo from './../assets/images/ta-ma-la-ko.svg'
 import RedFarm from './../assets/images/red-farm.svg'
 import Hamburger from './../assets/images/hamburger-dish.svg'
+import Pizza from './../assets/images/Lumina.svg'
 import Spicy from './../assets/images/spicy-icon.svg'
 import Vegan from './../assets/images/vegan-icon.svg'
 import Vegi from './../assets/images/vegi-icon.svg'
-import { cardProps } from '../models/types';
+import { cardTypeProps } from '../models/types';
 
 
 
-const DishesData: { title: string, cards: cardProps[] } = {
+const DishesData: cardTypeProps = {
     title: "SIGNATURE DISH OF:",
     cards: [
         {
@@ -37,6 +38,13 @@ const DishesData: { title: string, cards: cardProps[] } = {
             title: "Hamburger",
             image: Hamburger,
             description: "Buns, Meat, Fries",
+            iconMeaning: Spicy,
+            price: 78,
+        },
+        {
+            title: "Pizza",
+            image: Pizza,
+            description: "Cheese, Wheat, Tomato Sauce",
             iconMeaning: Spicy,
             price: 78,
         }

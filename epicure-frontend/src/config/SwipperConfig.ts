@@ -6,9 +6,6 @@ const SwipperConfig = (spaceBetween: number) => ({
     initialSlide: 0,
     spaceBetween: spaceBetween,
     slidesPerView: 1.4,
-    navigation: true,
-    scrollbar: { draggable: true },
-    pagination: true,
     loop: true,
     coverflowEffect: {
         rotate: 50,
@@ -16,14 +13,6 @@ const SwipperConfig = (spaceBetween: number) => ({
         depth: 0,
         modifier: 1,
         slideShadows: true,
-    },
-    breakpoints: {
-        900: {
-            autoplay: false,
-            spaceBetween: spaceBetween - 8,
-            slidesPerView: 1.4,
-            touchRatio: 0
-        },
     },
     watchOverflow: true
 });

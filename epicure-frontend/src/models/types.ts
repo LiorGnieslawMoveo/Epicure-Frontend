@@ -11,5 +11,5 @@ export type cardProps = {
 
 export type cardTypeProps = {
     title: string;
-    cardsList: cardProps[];
+    cards: cardProps[];
 }

@@ -14,9 +14,9 @@ import FiveStars from './../assets/images/5stars.svg';
 
 import Spicy from './../assets/images/spicy-icon.svg';
 import PadKiMao from './../assets/images/padkimao.svg';
-import { cardProps } from '../models/types';
+import { cardTypeProps } from '../models/types';
 
-const RestaurantsData: { title: string, cards: cardProps[] } = {
+const RestaurantsData: cardTypeProps = {
     title: "POPULAR RESTAURANT IN EPICURE:",
     cards: [
         {

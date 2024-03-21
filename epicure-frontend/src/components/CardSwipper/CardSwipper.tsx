@@ -11,17 +11,10 @@ import AllRestaurants from './../../assets/images/all-restaurants.svg'
 
 const CardSwipper: React.FC<{ title?: string, cards: cardProps[] }> = ({ title, cards }) => {
     return (
-        <>
-            <div className="swiper-container">
-                <h1 className='swipper-title'>{title}</h1>
+        <div className="dish-container">
+            <h3 className='title'>{title}</h3>
+            <div className='card-dish-container'>
                 <Swiper {...SwipperConfig(24)}>
-                    {/* {
-                        cards.map((card, index) => (
-                            <SwiperSlide key={index}>
-                                <Card {...card} />
-                            </SwiperSlide>
-                        ))
-                    } */}
                     <div className='cards-swipper'>
                         {cards.map((card, index) => (
                             <SwiperSlide className='swiper-slide' key={index}>
@@ -30,12 +23,12 @@ const CardSwipper: React.FC<{ title?: string, cards: cardProps[] }> = ({ title, 
                         ))}
                     </div>
                 </Swiper>
-                <div className='all-restaurants'>
-                    <span className='all-restaurants-title'>All Restaurants</span>
-                    <img src={AllRestaurants} alt='All Restaurants' className='all-resaurants-icon' />
-                </div>
-            </div >
-        </>
+            </div>
+            <div className='all-restaurants'>
+                <span className='all-restaurants-title'>All Restaurants</span>
+                <img src={AllRestaurants} alt='All Restaurants' className='all-resaurants-icon' />
+            </div>
+        </div >
     );
 };
 
