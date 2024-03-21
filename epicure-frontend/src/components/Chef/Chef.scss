@@ -2,12 +2,11 @@
 $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
 
 .chef-container {
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 48px;
+    margin: 0 20px 48px;
 
     @include desktop {
         margin-top: 80px;
+        padding: 0 10%;
     }
 
     .title {
@@ -40,7 +39,7 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
             width: 100%;
             height: 262px;
             background-image: $Chef-Image;
-            background-size: contain;
+            background-size: cover;
             overflow: hidden;
 
             @include desktop {
@@ -62,6 +61,14 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
                 font-size: 18px;
                 line-height: 47px;
                 letter-spacing: 2.67px;
+
+                @include desktop {
+                    font-size: 40px;
+                    text-align: center;
+                    padding-top: 15.5px;
+                    padding-bottom: 15.5px;
+
+                }
             }
         }
 
@@ -91,26 +98,30 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
             @include desktop {
                 font-size: 30px;
                 line-height: 35px;
+                letter-spacing: 1.25px;
             }
 
         }
 
         .swiper {
             .swiper-slide {
+                .restaurant-card {
+                    width: 210px;
+                    height: 233px;
+
+                    @include desktop {
+                        width: 231px;
+                        height: 357px;
+
+                        .card-title {
+                            font-size: 30px;
+
+                        }
+                    }
+                }
+
                 @include desktop {
                     max-width: fit-content;
-                }
-            }
-
-            @include desktop {
-
-                .swiper-button-prev,
-                .swiper-button-next {
-                    display: none;
-                }
-
-                .swiper-pagination {
-                    display: none;
                 }
             }
         }
