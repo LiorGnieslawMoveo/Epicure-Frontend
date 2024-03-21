@@ -16,7 +16,7 @@ const Chef = () => {
         <div className='chef-container'>
             <h3 className='title'>CHEF OF THE WEEK:</h3>
             <div className='image-description-container'>
-                <div className='image-container' style={{ backgroundImage: `url(${ChefData.image})` }}>
+                <div className='image-container'>
                     <h3 className='chef-name'>{ChefData.name}</h3>
                 </div>
                 <p className='chef-description'>{ChefData.description}</p>
