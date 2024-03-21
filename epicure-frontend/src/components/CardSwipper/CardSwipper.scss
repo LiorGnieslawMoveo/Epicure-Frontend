@@ -21,6 +21,18 @@
         .swiper-slide {
             max-width: fit-content;
         }
+
+        @include desktop {
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                display: none;
+            }
+
+            .swiper-pagination {
+                display: none;
+            }
+        }
     }
 
     .all-restaurants {

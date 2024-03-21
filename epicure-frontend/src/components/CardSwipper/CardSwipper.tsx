@@ -2,9 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
-import { EffectFade } from 'swiper/modules';
 import SwipperConfig from '../../config/SwipperConfig';
-import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 import './CardSwipper.scss'
 import Card from '../Card/Card';
@@ -17,13 +15,20 @@ const CardSwipper: React.FC<{ title?: string, cards: cardProps[] }> = ({ title, 
             <div className="swiper-container">
                 <h1 className='swipper-title'>{title}</h1>
                 <Swiper {...SwipperConfig(24)}>
-                    {
+                    {/* {
                         cards.map((card, index) => (
                             <SwiperSlide key={index}>
                                 <Card {...card} />
                             </SwiperSlide>
                         ))
-                    }
+                    } */}
+                    <div className='cards-swipper'>
+                        {cards.map((card, index) => (
+                            <SwiperSlide className='swiper-slide' key={index}>
+                                <Card {...card} />
+                            </SwiperSlide>
+                        ))}
+                    </div>
                 </Swiper>
                 <div className='all-restaurants'>
                     <span className='all-restaurants-title'>All Restaurants</span>
