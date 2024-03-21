@@ -3,10 +3,8 @@
 .dish-container {
     display: flex;
     flex-direction: column;
-    margin-left: 19px;
     width: 100%;
-    margin-right: 20px;
-
+    margin: 0 20px 80px 20px;
 
     .title {
         align-items: center;
@@ -38,24 +36,31 @@
 
             .swiper-slide {
                 max-width: fit-content;
+
+                .dish-card {
+                    .description-meaning-container {
+                        height: 171px;
+                    }
+                }
             }
+
         }
     }
 
+    .no-restaurants {
+        display: none;
+    }
 
     .all-restaurants {
         display: flex;
         align-items: center;
         flex-direction: row;
         gap: 12px;
-        margin-top: 18px;
 
         @include desktop {
-            // width: 1185px;
             margin-top: 40px;
-            padding: 50px;
-            // margin-right: 200px;
             justify-content: flex-end;
+            padding-right: 50px;
         }
 
         .all-restaurants-title {

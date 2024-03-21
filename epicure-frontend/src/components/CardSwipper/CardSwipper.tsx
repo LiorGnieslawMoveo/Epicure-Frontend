@@ -18,13 +18,13 @@ const CardSwipper: React.FC<{ title?: string, cards: cardProps[] }> = ({ title, 
                     <div className='cards-swipper'>
                         {cards.map((card, index) => (
                             <SwiperSlide className='swiper-slide' key={index}>
-                                <Card {...card} />
+                                <Card {...card} className={card.className ? `restaurant-card` : 'dish-card'} />
                             </SwiperSlide>
                         ))}
                     </div>
                 </Swiper>
             </div>
-            <div className='all-restaurants'>
+            <div className={cards[0].className ? 'all-restaurants' : 'no-restaurants'} >
                 <span className='all-restaurants-title'>All Restaurants</span>
                 <img src={AllRestaurants} alt='All Restaurants' className='all-resaurants-icon' />
             </div>
