@@ -9,6 +9,7 @@ import AboutUs from './components/AboutUs/AboutUs';
 import Footer from './components/Footer/Footer';
 import DishesData from './constants/DishesData';
 import RestaurantsData from './constants/RestaurantsData';
+import Chef from './components/Chef/Chef';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <CardSwipper title={RestaurantsData.title} cards={RestaurantsData.cards} />
         <CardSwipper title={DishesData.title} cards={DishesData.cards} />
         <IconsMeaning />
+        <Chef />
         <AboutUs />
         <Footer />
       </div>

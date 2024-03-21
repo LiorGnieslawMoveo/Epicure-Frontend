@@ -13,3 +13,10 @@ export type cardTypeProps = {
     title: string;
     cards: cardProps[];
 }
+
+export type Chef = {
+    name: string;
+    image: string;
+    description: string;
+    restaurants: cardProps[];
+}
