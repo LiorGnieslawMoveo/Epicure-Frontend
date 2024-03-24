@@ -28,6 +28,12 @@
         }
 
         .icon-item {
+            transition: transform 0.5s ease;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
             @include desktop {
                 display: flex;
                 flex-direction: column;
