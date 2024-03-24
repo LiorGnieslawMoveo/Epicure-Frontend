@@ -14,6 +14,8 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
         line-height: 35px;
         letter-spacing: 1.25px;
         text-align: left;
+        transition: transform 0.5s ease;
+
 
         @include desktop {
             font-size: 30px;
@@ -24,6 +26,8 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
     .image-description-container {
         display: flex;
         flex-direction: column;
+        transition: transform 0.5s ease;
+
 
         @include desktop {
             flex-direction: row;
@@ -77,6 +81,8 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
             line-height: 28px;
             letter-spacing: 1.25px;
             text-align: justify;
+            transition: transform 0.5s ease;
+
 
             @include desktop {
                 font-size: 24px;
@@ -136,6 +142,8 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
         flex-direction: row;
         gap: 12px;
         margin-top: 18px;
+        transition: transform 0.5s ease;
+
 
         @include desktop {
             display: none;
