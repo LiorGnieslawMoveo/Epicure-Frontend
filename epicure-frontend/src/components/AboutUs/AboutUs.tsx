@@ -17,8 +17,8 @@ const AboutUs = () => {
           </div>
           <div className='descriptions-container'>
             <h3 className='about-us-title'>ABOUT US:</h3>
-            <div className='about-us-description part-one'>{firstText}</div>
-            <div className='about-us-description part-two'>{secondText}</div>
+            <div className='about-us-description-part-one'>{firstText}</div>
+            <div className='about-us-description-part-two'>{secondText}</div>
           </div>
         </div>
       </div>

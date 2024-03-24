@@ -90,6 +90,7 @@
       }
     }
 
+
     div {
       @include font-style;
       display: flex;
@@ -103,6 +104,13 @@
         text-align: left;
       }
 
+
+    }
+
+    .about-us-description-part-two {
+      @include desktop {
+        margin-top: 10px;
+      }
     }
   }
 }
