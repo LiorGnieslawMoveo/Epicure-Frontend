@@ -28,7 +28,7 @@
         }
 
         .icon-item {
-            transition: transform 0.5s ease;
+            transition: var(--transition-time);
 
             &:hover {
                 transform: scale(1.2);
