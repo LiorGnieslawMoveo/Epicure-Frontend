@@ -16,7 +16,6 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
         text-align: left;
         transition: var(--transition-time);
 
-
         @include desktop {
             font-size: 30px;
             text-align: center;
@@ -27,7 +26,6 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
         display: flex;
         flex-direction: column;
         transition: var(--transition-time);
-
 
         @include desktop {
             flex-direction: row;
@@ -68,9 +66,7 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
                 @include desktop {
                     font-size: 40px;
                     text-align: center;
-                    padding-top: 15.5px;
-                    padding-bottom: 15.5px;
-
+                    padding: 15px 0;
                 }
             }
         }
@@ -82,7 +78,6 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
             letter-spacing: 1.25px;
             text-align: justify;
             transition: var(--transition-time);
-
 
             @include desktop {
                 font-size: 24px;
@@ -105,7 +100,6 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
                 line-height: 35px;
                 letter-spacing: 1.25px;
             }
-
         }
 
         .swiper {
@@ -120,7 +114,6 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
 
                         .card-title {
                             font-size: 30px;
-
                         }
                     }
                 }
@@ -144,7 +137,6 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
         margin-top: 18px;
         transition: var(--transition-time);
 
-
         @include desktop {
             display: none;
         }
@@ -165,7 +157,4 @@ $Chef-Image: url('../../assets/images/yossi-shitrit.svg');
             height: 18px;
         }
     }
-
-
-
 }

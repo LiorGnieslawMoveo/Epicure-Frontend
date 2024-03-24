@@ -41,7 +41,6 @@
                     width: 40px;
                     transition: var(--transition-time);
 
-
                     @include desktop {
                         align-items: center;
                     }
@@ -56,7 +55,6 @@
                         margin-left: 20px;
                     }
                 }
-
             }
 
             .navbar-titles {
@@ -70,7 +68,6 @@
                     align-items: center;
                 }
             }
-
         }
 
         .navbar-icons {
