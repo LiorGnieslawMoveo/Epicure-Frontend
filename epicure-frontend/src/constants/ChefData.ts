@@ -1,4 +1,4 @@
-import { cardProps, Chef } from "../models/types";
+import { Chef } from "../models/types";
 import ChefImage from '../assets/images/yossi-shitrit.svg';
 import Onza from '../assets/images/onza.svg';
 import KitchenMarket from '../assets/images/kitchen-market.svg';
