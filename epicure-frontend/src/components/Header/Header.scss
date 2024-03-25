@@ -39,6 +39,7 @@
 
                 .epicure-logo {
                     width: 40px;
+                    transform: translateX(50%);
                     transition: var(--transition-time);
 
                     @include desktop {
