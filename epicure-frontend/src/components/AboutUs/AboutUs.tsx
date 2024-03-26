@@ -9,7 +9,7 @@ const AboutUs = () => {
   return (
     <>
       <div className='about-us-container'>
-        <Slide>
+        <Slide triggerOnce>
           <div className="logo-container">
             <img className='epicure-logo' src={epicureLogo} alt='Epicure Logo' />
           </div>

@@ -14,7 +14,7 @@ import { Slide } from "react-awesome-reveal";
 const CardSwipper: React.FC<{ title?: string, cards: cardProps[] }> = ({ title, cards }) => {
     return (
         <div className="dish-container">
-            <Slide>
+            <Slide triggerOnce>
                 <h3 className='title'>{title}</h3>
                 <div className='card-dish-container'>
                     <Swiper {...SwipperConfig(24)}>

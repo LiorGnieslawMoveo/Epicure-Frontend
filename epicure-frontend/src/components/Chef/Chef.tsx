@@ -15,8 +15,7 @@ const Chef = () => {
     chefFirstName = chefFirstName.toUpperCase();
     return (
         <div className='chef-container'>
-            <Slide>
-
+            <Slide triggerOnce>
                 <h3 className='title'>CHEF OF THE WEEK:</h3>
                 <div className='image-description-container'>
                     <div className='image-container'>

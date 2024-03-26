@@ -19,7 +19,7 @@ const Header = () => {
               <img className="hamburger-menu" src={hamburger} alt="Epicure Logo" />
             </div>
             <div className="logo-container">
-              <Rotate>
+              <Rotate triggerOnce>
                 <img className="epicure-logo" src={epicureLogo} alt="epicure"></img>
 
               </Rotate>

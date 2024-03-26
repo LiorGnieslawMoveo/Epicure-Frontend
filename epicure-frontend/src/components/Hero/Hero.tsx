@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <>
             <div className='hero-container' >
-                <Slide>
+                <Slide triggerOnce>
                     <div className='hero-overlay'>
                         <div className='hero-content'>
                             <div className='hero-text'>Epicure works with the top chef restaurants in Tel Aviv</div>
