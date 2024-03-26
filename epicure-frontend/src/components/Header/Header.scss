@@ -44,6 +44,7 @@
 
                     @include desktop {
                         align-items: center;
+                        transform: unset;
                     }
                 }
 
