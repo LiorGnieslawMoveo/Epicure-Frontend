@@ -37,14 +37,14 @@ const DishesData: cardTypeProps = {
         {
             title: "Hamburger",
             image: Hamburger,
-            description: "Buns, Meat, Fries",
+            description: "Buns, Beef Patty, Lettuce, Onion, Pickles, Ketchup, Mayonnaise",
             iconMeaning: Spicy,
             price: 78,
         },
         {
             title: "Pizza",
             image: Pizza,
-            description: "Cheese, Wheat, Tomato Sauce",
+            description: "Dough, Mozzarella Cheese, Tomato Sauce, Mushrooms, Onions, Olives",
             iconMeaning: Spicy,
             price: 78,
         }

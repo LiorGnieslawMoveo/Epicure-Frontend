@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: var(--transition-time);
 
     @include desktop {
         height: 696px;
@@ -18,7 +19,7 @@
         display: flex;
         background: var(--overlay-backgroundcolor);
         width: 335px;
-        height: 144px;
+        height: 180px;
 
         @include desktop {
             justify-content: center;

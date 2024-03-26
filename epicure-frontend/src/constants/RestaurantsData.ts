@@ -12,8 +12,6 @@ import ThreeStars from './../assets/images/3stars.svg';
 import FourStars from './../assets/images/4stars.svg';
 import FiveStars from './../assets/images/5stars.svg';
 
-import Spicy from './../assets/images/spicy-icon.svg';
-import PadKiMao from './../assets/images/padkimao.svg';
 import { cardTypeProps } from '../models/types';
 
 const RestaurantsData: cardTypeProps = {

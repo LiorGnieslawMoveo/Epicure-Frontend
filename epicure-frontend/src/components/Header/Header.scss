@@ -39,6 +39,8 @@
 
                 .epicure-logo {
                     width: 40px;
+                    transform: translateX(50%);
+                    transition: var(--transition-time);
 
                     @include desktop {
                         align-items: center;
@@ -54,7 +56,6 @@
                         margin-left: 20px;
                     }
                 }
-
             }
 
             .navbar-titles {
@@ -68,7 +69,6 @@
                     align-items: center;
                 }
             }
-
         }
 
         .navbar-icons {
